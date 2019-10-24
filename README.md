@@ -22,3 +22,6 @@ pug refactoring for bulma admin template
 
 ### references:
 [https://bulmatemplates.github.io/bulma-templates/templates/admin.html#](https://bulmatemplates.github.io/bulma-templates/templates/admin.html#)
+
+### change log:
+- 2019-10-24 init commit
