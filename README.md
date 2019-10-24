@@ -17,5 +17,8 @@ pug refactoring for bulma admin template
         └── tiles
 ```
 
+### DEMO:
+[https://louiscklaw.github.io/bulma-admin-templates](https://louiscklaw.github.io/bulma-admin-templates)
+
 ### references:
 [https://bulmatemplates.github.io/bulma-templates/templates/admin.html#](https://bulmatemplates.github.io/bulma-templates/templates/admin.html#)
