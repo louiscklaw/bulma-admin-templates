@@ -1,0 +1,22 @@
+extends layout/layout-test.pug
+
+block title
+  title Components
+
+block append content
+  .column.is-9
+    nav.breadcrumb(aria-label="breadcrumbs")
+      ul
+        li
+          a system
+        li.is-active
+          a(href="#components") components
+
+    h1.title.is-1 Components
+    ul
+      li
+        a(href="#") inputs
+      li
+        a(href="#") table
+      li
+        a(href="#") pages

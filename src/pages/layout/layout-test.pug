@@ -5,10 +5,12 @@ html(lang='en')
 
     include ../pug_inc/head.pug
 
-  body
+  body.body
     block body
       include ../pug_inc/nav/index.pug
       include ../pug_inc/main.pug
+
+    include ../pug_inc/footer/index.pug
 
     block script
       include ../pug_inc/scripts.pug

@@ -8,5 +8,5 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log("Pjax initialized.", pjax);
 
   // Init page content
-  initButtons();
+  // initButtons();
 });

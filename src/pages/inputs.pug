@@ -1,0 +1,15 @@
+extends layout/layout-test.pug
+include pug_inc/mixins.pug
+
+block title
+  title inputs
+
+block append content
+  .column.is-9
+    section.section
+      .container
+        +breadcrumb(['components','input'])
+
+        h1.subtitle.is-1 inputs
+        h3.subtitle.is-3 bulma inputs
+        include static/bulma_inputs.html
