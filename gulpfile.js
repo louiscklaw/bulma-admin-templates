@@ -16,7 +16,7 @@ const order = require("gulp-order");
 const PROJ_HOME = `${__dirname}`;
 const SRC_DIR = `${PROJ_HOME}/src`;
 const BUILD_DIR = `${PROJ_HOME}/build`;
-const PUBLIC_ROOT = `${PROJ_HOME}/public`;
+const PUBLIC_ROOT = `${PROJ_HOME}/docs`;
 
 function clean() {
   return exec(`rm -rf BUILD_DIR`);
