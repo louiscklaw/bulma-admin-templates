@@ -1,3 +1,6 @@
+
+- nav_list = {Home: '0', Orders: '0', Payments: '0', Exceptions: '0', Bulma:'0'}
+
 nav.navbar.is-white
   .container
     .navbar-brand
@@ -6,10 +9,16 @@ nav.navbar.is-white
 
     #navMenu.navbar-menu
       .navbar-start
-        a.navbar-item(href="#") Home
-        a.navbar-item(href="#") Orders
-        a.navbar-item(href="#") Payments
-        a.navbar-item(href="#") Exceptions
-        a.navbar-item(href="#") Reports
+        each link, content in nav_list
+          if link == '0'
+            a.navbar-item(href= content+'.html').js-Pjax #{content}
+          else
+            a.navbar-item(href= link).js-Pjax #{content}
+        //- a.navbar-item(href="#") Home
+        //- a.navbar-item(href="#") Orders
+        //- a.navbar-item(href="#") Payments
+        //- a.navbar-item(href="#") Exceptions
+        //- a.navbar-item(href="#") Reports
+        //- a.navbar-item(href="bulma_page.html") bulma
 
     include navbar_end.pug

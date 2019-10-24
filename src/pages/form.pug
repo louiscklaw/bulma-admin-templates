@@ -1,4 +1,4 @@
-extends layout/layout-test.pug
+extends layout/layout-bulma.pug
 include pug_inc/mixins.pug
 
 block title
@@ -10,6 +10,5 @@ block append content
       .container
         +breadcrumb(['components','input'])
 
-        h1.subtitle.is-1 form
-        h3.subtitle.is-3 bulma form
+        h3.subtitle.is-3 form
         include static/bulma_form.html

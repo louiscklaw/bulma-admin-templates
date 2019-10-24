@@ -1,0 +1,21 @@
+//- doctype html
+//- html(lang='en')
+//-   head
+//-     title Home
+
+//-     include pug_inc/head.pug
+//-   body
+//-     include pug_inc/body.pug
+//-     include pug_inc/scripts.pug
+
+extends layout/layout-main.pug
+
+block title
+  title Home
+
+block sidebar
+  include pug_inc/sidebar/home_sidemenu.pug
+  //- include sidebar.pug
+
+block content
+  include pug_inc/content.pug

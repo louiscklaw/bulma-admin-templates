@@ -1,4 +1,4 @@
-extends layout/layout-test.pug
+extends layout/layout-home.pug
 include pug_inc/mixins.pug
 
 block title
@@ -6,9 +6,10 @@ block title
 
 block append content
   .column.is-9
-    +breadcrumb(['about','about'])
+    section.section
+      .container
+        +breadcrumb(['about','about'])
 
-    .section
       .content_container
         h1.subtitle.is-1 About
 

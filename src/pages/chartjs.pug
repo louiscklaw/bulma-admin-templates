@@ -1,11 +1,11 @@
-extends layout/layout-test.pug
+extends layout/layout-bulma.pug
 include pug_inc/mixins.pug
+
+block title
+  title chartjs
 
 block head_append
   script(src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0")
-
-block title
-  title about
 
 block append content
   .column.is-9
