@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/louiscklaw/bulma-admin-templates#readme",
   "devDependencies": {
+    "express": "^4.17.1",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",

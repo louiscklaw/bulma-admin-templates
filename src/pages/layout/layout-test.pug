@@ -1,0 +1,14 @@
+doctype html
+html(lang='en')
+  head
+    block title
+
+    include ../pug_inc/head.pug
+
+  body
+    block body
+      include ../pug_inc/nav/index.pug
+      include ../pug_inc/main.pug
+
+    block script
+      include ../pug_inc/scripts.pug

@@ -23,7 +23,7 @@ function clean() {
 }
 
 function html() {
-  return src(`${SRC_DIR}/*.pug`)
+  return src(`${SRC_DIR}/pages/*.pug`)
     .pipe(debug())
     .pipe(pug())
     .pipe(dest(PUBLIC_ROOT));
@@ -42,7 +42,11 @@ function js() {
   ], {
     sourcemaps: true
   })
-    .pipe(order(["_vars.js", "_common.js", "*.js"]))
+    .pipe(order([
+      "_vars.js", "_common.js",
+      "!_*.js",
+      "_DOMContentLoaded.js"
+    ]))
     .pipe(concat("app.js"))
     .pipe(
       dest(`${PUBLIC_ROOT}/js`, {
