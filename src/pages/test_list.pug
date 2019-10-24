@@ -1,0 +1,12 @@
+extends layout/layout-bulma.pug
+include pug_inc/mixins.pug
+
+block title
+  title tables
+
+block append content
+  +breadcrumb(['components','crud_test', 'list'])
+
+  h3.subtitle.is-3 list records
+
+  include static/bulma_tables.html

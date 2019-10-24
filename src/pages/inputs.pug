@@ -5,11 +5,8 @@ block title
   title inputs
 
 block append content
-  .column.is-9
-    section.section
-      .container
-        +breadcrumb(['components','input'])
+  +breadcrumb(['components','input'])
 
-        h1.subtitle.is-1 inputs
-        h3.subtitle.is-3 bulma inputs
-        include static/bulma_inputs.html
+  h3.subtitle.is-3 bulma inputs
+
+  include static/bulma_inputs.html
