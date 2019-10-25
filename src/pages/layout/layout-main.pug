@@ -2,15 +2,18 @@ doctype html
 html(lang='en')
   head
     block title
-
     include ../pug_inc/head.pug
 
-  body.body
-    block body
-      block navbar
-      include ../pug_inc/main.pug
+  body
+    .body
+      block body
+        include ../pug_inc/utils/sentry/sentry_init.html
+        include ../pug_inc/utils/google_analytics/ga_init.html
 
-    include ../pug_inc/footer/index.pug
+        block navbar
+        include ../pug_inc/main.pug
 
-    block script
-      include ../pug_inc/scripts.pug
+      include ../pug_inc/footer/index.pug
+
+      block script
+        include ../pug_inc/scripts.pug
