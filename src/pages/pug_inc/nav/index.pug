@@ -1,24 +1,25 @@
 
-- nav_list = {Home: '0', Orders: '0', Payments: '0', Exceptions: '0', Bulma:'0'}
+mixin navbar(active)
+  - var nav_list = {Home: '0', Orders: '0', Payments: '0', Exceptions: '0', Bulma:'0'}
 
-nav.navbar.is-white
-  .container
-    .navbar-brand
-      a.navbar-item.brand-text(href="#") Bulma Admin
-      include troubleshoot.pug
+  nav.navbar.is-white
+    .container
+      .navbar-brand
+        a.navbar-item.brand-text(href="#") Bulma Admin
+        include troubleshoot.pug
 
-    #navMenu.navbar-menu
-      .navbar-start
-        each link, content in nav_list
-          if link == '0'
-            a.navbar-item(href= content+'.html').js-Pjax #{content}
-          else
-            a.navbar-item(href= link).js-Pjax #{content}
-        //- a.navbar-item(href="#") Home
-        //- a.navbar-item(href="#") Orders
-        //- a.navbar-item(href="#") Payments
-        //- a.navbar-item(href="#") Exceptions
-        //- a.navbar-item(href="#") Reports
-        //- a.navbar-item(href="bulma_page.html") bulma
+      #navMenu.navbar-menu
+        .navbar-start
+          each link, content in nav_list
+            - var classes = ['js-Pjax']
 
-    include navbar_end.pug
+            if active == content
+              - classes.push('is-active')
+
+            if link == '0'
+              a.navbar-item(class=classes href= content+'.html') #{content}
+            else
+              a.navbar-item(class=classes href= link) #{content}
+
+
+      include navbar_end.pug

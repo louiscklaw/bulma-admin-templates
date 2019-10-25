@@ -1,5 +1,9 @@
 extends layout-main.pug
 include ../pug_inc/mixins.pug
 
+include ../pug_inc/nav/index.pug
+block navbar
+  +navbar('Bulma')
+
 block sidebar
   include ../pug_inc/sidebar/bulma_sidemenu.pug

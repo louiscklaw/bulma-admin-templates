@@ -1,5 +1,9 @@
 extends layout-main.pug
 include ../pug_inc/mixins.pug
 
+include ../pug_inc/nav/index.pug
+block navbar
+  +navbar('Home')
+
 block sidebar
   include ../pug_inc/sidebar/home_sidemenu.pug
