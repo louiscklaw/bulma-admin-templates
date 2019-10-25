@@ -3,7 +3,7 @@ pug refactoring for bulma admin template
 
 ### directory structure
 ```
-├── docs                        # temp directory for demo *PUBLIC
+└── docs                        # temp directory for demo *PUBLIC
     ├── js                      # temp directory of js    *PUBLIC
     └── less                    # temp directory of less  *PUBLIC
 └── src                         # root directory of pug
