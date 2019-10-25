@@ -19,6 +19,9 @@ pug refactoring for bulma admin template
 
 ### DEMO:
 [https://louiscklaw.github.io/bulma-admin-templates](https://louiscklaw.github.io/bulma-admin-templates)
+![https://raw.githubusercontent.com/louiscklaw/bulma-admin-templates/master/documentation/img/screenshot_home.png](https://raw.githubusercontent.com/louiscklaw/bulma-admin-templates/master/documentation/img/screenshot_home.png)
+
+
 
 ### references:
 [https://bulmatemplates.github.io/bulma-templates/templates/admin.html#](https://bulmatemplates.github.io/bulma-templates/templates/admin.html#)
